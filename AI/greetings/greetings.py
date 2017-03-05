@@ -5,5 +5,5 @@ def __main__():
     os.system("espeak -ven-us+f3 --stdout '%s' -a 300 -s 130 | aplay" % greetings)
 
 
-
+__main__()
 
