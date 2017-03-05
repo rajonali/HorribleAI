@@ -22,18 +22,9 @@ def priceOutput(stock):
     output = 'The price of %s is %s'%(data['query']['results']['quote']['Name'],data['query']['results']['quote']['LastTradePriceOnly'])
     return output
 
-
-outputs = []
-for i in getStocks():
-    outputs.append(priceOutput(i))
-
-
-for i in outputs:
-    os.system("espeak '%s' -s 100" % i)
-
-
-os.system("espeak {0}".format(str(priceOutput())))
-
+def __main__()
+    for i in getStocks():
+        os.system("espeak '%s' -s 100" % i)
     '''
     mp3url = 'http://tts-api.com/tts.mp3?q='+output.replace(' ', '_').replace('&', ' and ')+''
     with open('%s.mp3'%data['query']['results']['quote']['Name'].replace(' ',' '), 'wb') as handle:
