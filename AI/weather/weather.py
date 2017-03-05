@@ -15,5 +15,5 @@ def outputWeather():
     output = 'The weather in %s, %s is %s and is %s. Humidity levels are at %s.' %(data['current_observation']['display_location']['city'], data['current_observation']['display_location']['state_name'], data['current_observation']['weather'], data['current_observation']['temperature_string'], data['current_observation']['relative_humidity'])
     return output
 
-
-os.system("espeak '%s'" % outputWeather())
+def __main__():
+    os.system("espeak '%s'" % outputWeather())
