@@ -1,5 +1,5 @@
 # HorribleAI
-First python project: A horrible recreation of Iron Man's Jarvis alarm clock featured in the movie.
+First python project: A recreation of Iron Man's Jarvis alarm clock featured in the movie.
 
 This was my first python project from the summer of 2014. I have edited a few files removing commented out code and just added a small description comment at the top of the files.
 
